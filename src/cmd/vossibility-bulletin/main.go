@@ -10,7 +10,7 @@ import (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "vossibility-bulleting"
+	app.Name = "vossibility-bulletin"
 	app.Usage = "generate bulletins from vossibility data"
 	app.Version = "0.1.0"
 
