@@ -10,5 +10,9 @@ ADD . /src
 WORKDIR /src
 RUN gb build all
 
+# Drop privileges
+RUN adduser -D bulletin
+USER bulletin
+
 # Set the entrypoint
 ENTRYPOINT ["/src/bin/vossibility-bulletin"]
